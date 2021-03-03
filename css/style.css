@@ -30,16 +30,12 @@ ul {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 3px solid blue;
 }
 /* ======conainer-header====== */
 .container-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  outline: 2px solid yellow;
 }
 
 /* вся страница */
@@ -62,16 +58,12 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-
-  outline: 3px solid red;
 }
 
 /* навигация в шапке */
 .site-nav {
   display: flex;
   margin-left: 93px;
-
-  outline: 4px solid red;
 }
 
 .site-nav .link {
@@ -88,7 +80,6 @@ body {
 }
 .nav-list + .nav-list {
   margin-left: 50px;
-  background-color: #2196f3;
 }
 
 .site-nav :hover,
@@ -109,8 +100,6 @@ body {
   display: flex;
   justify-content: center;
   margin: 0px;
-
-  outline: 2px solid red;
 }
 .contact .list + .list {
   margin-left: 50px;
@@ -129,17 +118,49 @@ body {
   color: var(--bg-button-color);
 }
 
+/* =======section hero======= */
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--bg-footer);
+
+  outline: 3px solid red;
+}
+
 /* заголовок в hero */
-.hero .main-heading {
+.section-hero .main-heading {
+  display: block;
+  width: 696px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: var(--bg-main-page-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* кнопка в секции hero */
+.hero .button-hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .button-hero {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+
+  border-radius: 3px;
+  border-color: transparent;
   color: var(--button-color);
   background-color: var(--bg-button-color);
   font-style: normal;
