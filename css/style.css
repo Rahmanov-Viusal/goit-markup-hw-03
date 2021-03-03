@@ -1,0 +1,205 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --bg-main-page-color: #ffffff;
+  --desc-text-color: #757575;
+  --bg-button-color: #2196f3;
+  --button-color: #ffffff;
+  --nav-color: #212121;
+  --bg-button-filter: #f5f4fa;
+  --project-title-color: #212121;
+  --bg-btn-hover: #188ce8;
+}
+/* ======conainer====== */
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* вся страница */
+body {
+  margin: 0;
+  background-color: var(--bg-main-page-color);
+  color: var(--nav-color);
+  font-family: Roboto, sans-serif;
+}
+/* все списки */
+ul {
+  list-style: none;
+}
+/* название компании */
+.name-company .text {
+  color: #2196f3;
+  font-family: Raleway;
+}
+.name-company {
+  color: #000000;
+  font-family: Raleway;
+
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.footer-text {
+  color: #ffffff;
+}
+
+/* навигация в шапке */
+
+.site-nav .link {
+  color: var(--nav-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav :hover,
+.site-nav :focus {
+  color: var(--bg-button-color);
+}
+
+.site-nav .link :active {
+  color: var(--bg-button-color);
+}
+
+/* контакты в шапке и подвале */
+.contact a {
+  color: var(--desc-text-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact :hover,
+.contact :focus {
+  color: var(--bg-button-color);
+}
+
+/* заголовок в hero */
+.hero .main-heading {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+}
+
+/* кнопка в секции hero */
+.button-hero {
+  color: var(--button-color);
+  background-color: var(--bg-button-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--bg-btn-hover);
+  cursor: pointer;
+}
+
+/* секция "о нас" */
+.feature-list .text {
+  color: var(--desc-text-color);
+}
+.section-title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* подзаголовки секции "о нас" */
+.feature-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+/* текст в секции "о нас" */
+.feature-list .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* специальности команды */
+.section-team .text {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* имена разработчиков */
+.section-team .name {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*
+
+
+
+
+
+стили для второй страницы*/
+
+/* кнопки фильтра */
+.button .filter {
+  background: var(--bg-button-filter);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+/* кнопки после наведения */
+.button .filter:hover,
+.button .filter:focus {
+  color: var(--button-color);
+  background: var(--bg-button-color);
+}
+
+/* заголовки под картинками */
+.project .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--project-title-color);
+}
+
+/* текст под картинками */
+.project .subtitle {
+  color: var(--desc-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+.project .link {
+  text-decoration: none;
+}
+.footer {
+  background-color: #2f303a;
+}
