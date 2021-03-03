@@ -174,7 +174,13 @@ body {
   cursor: pointer;
 }
 
-/* секция "о нас" */
+/*====== feature ====== */
+.section-feature {
+  padding-top: 94px;
+}
+.feature-list {
+  display: flex;
+}
 .feature-list .text {
   color: var(--desc-text-color);
 }
