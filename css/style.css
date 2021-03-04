@@ -257,7 +257,6 @@ body {
 }
 .team-list {
   display: flex;
-  /* height: 368px; */
 }
 .team-list .item {
   flex-basis: calc((100%-90px) / 4);
@@ -329,11 +328,28 @@ body {
 .contact-footer .list.map {
   margin-top: 20px;
 }
-/*=========================стили для второй страницы=============================*/
+/*========================= PORTFOLIO =============================*/
+.project {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-btn .button {
+  display: flex;
+  justify-content: center;
+}
+.button-item + .button-item {
+  margin-left: 8px;
+}
 
 /* кнопки фильтра */
 .button .filter {
+  border-color: transparent;
   background: var(--bg-button-filter);
+  border-radius: 3px;
+  padding-left: 22px;
+  padding-right: 22px;
+  min-width: 73px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -349,6 +365,14 @@ body {
   background: var(--bg-button-color);
 }
 
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.project-content {
+  padding-top: 20px 0px 20px 24px;
+}
 /* заголовки под картинками */
 .project .title {
   font-weight: 700;

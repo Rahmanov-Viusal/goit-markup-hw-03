@@ -23,7 +23,7 @@
 
   <body>
     <!--шапка сайта-->
-    <header>
+    <header class="header">
       <div class="container container-header">
         <nav class="navigation">
           <a class="name-company" href="/index.html"
@@ -56,25 +56,28 @@
     <main>
       <section class="project">
         <div class="container">
-          <h1 hidden>Портфолио</h1>
+          <!-- <h1 hidden>Портфолио</h1> -->
           <!--button filter-->
-          <ul class="button">
-            <li class="button-item">
-              <button type="button" class="filter">Все</button>
-            </li>
-            <li class="button-item">
-              <button type="button" class="filter">Веб-сайты</button>
-            </li>
-            <li class="button-item">
-              <button type="button" class="filter">Приложения</button>
-            </li>
-            <li class="button-item">
-              <button type="button" class="filter">Дизайн</button>
-            </li>
-            <li class="button-item">
-              <button type="button" class="filter">Маркетинг</button>
-            </li>
-          </ul>
+          <div class="portfolio-btn">
+            <ul class="button">
+              <li class="button-item">
+                <button type="button" class="filter">Все</button>
+              </li>
+              <li class="button-item">
+                <button type="button" class="filter">Веб-сайты</button>
+              </li>
+              <li class="button-item">
+                <button type="button" class="filter">Приложения</button>
+              </li>
+              <li class="button-item">
+                <button type="button" class="filter">Дизайн</button>
+              </li>
+              <li class="button-item">
+                <button type="button" class="filter">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+
           <!--портфолио-->
           <ul class="project-list">
             <li class="item">
@@ -86,8 +89,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Технокряк</h2>
-                <p class="subtitle">Веб-сайт</p>
+                <div class="project-content">
+                  <h2 class="title">Технокряк</h2>
+                  <p class="subtitle">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="item">
@@ -99,8 +104,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                <p class="subtitle">Дизайн</p>
+                <div class="project-content">
+                  <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                  <p class="subtitle">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="item">
@@ -112,8 +119,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Ресторан Seafood</h2>
-                <p class="subtitle">Приложение</p>
+                <div class="project-content">
+                  <h2 class="title">Ресторан Seafood</h2>
+                  <p class="subtitle">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="item">
@@ -125,8 +134,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Проект Prime</h2>
-                <p class="subtitle">Маркетинг</p>
+                <div class="project-content">
+                  <h2 class="title">Проект Prime</h2>
+                  <p class="subtitle">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="item">
@@ -138,8 +149,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Проект Boxes</h2>
-                <p class="subtitle">Приложение</p>
+                <div class="project-content">
+                  <h2 class="title">Проект Boxes</h2>
+                  <p class="subtitle">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="item">
@@ -151,8 +164,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Inspiration has no Borders</h2>
-                <p class="subtitle">Веб-сайт</p>
+                <div class="project-content">
+                  <h2 class="title">Inspiration has no Borders</h2>
+                  <p class="subtitle">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="item">
@@ -164,8 +179,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Издание Limited Edition</h2>
-                <p class="subtitle">Дизайн</p>
+                <div class="project-content">
+                  <h2 class="title">Издание Limited Edition</h2>
+                  <p class="subtitle">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="item">
@@ -177,8 +194,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Проект LAB</h2>
-                <p class="subtitle">Маркетинг</p>
+                <div class="project-content">
+                  <h2 class="title">Проект LAB</h2>
+                  <p class="subtitle">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="item" class="link">
@@ -190,8 +209,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="title">Growing Business</h2>
-                <p class="subtitle">Приложение</p>
+                <div class="project-content">
+                  <h2 class="title">Growing Business</h2>
+                  <p class="subtitle">Приложение</p>
+                </div>
               </a>
             </li>
           </ul>
