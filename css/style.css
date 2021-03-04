@@ -10,6 +10,7 @@
   --name-color: #000000;
   --bg-footer: #2f303a;
   --color-contact-footer: #ffffff 60 %;
+  --bg-section-team: #f5f4fa;
 }
 /* ======глобальнвй сброс======= */
 h1,
@@ -23,6 +24,12 @@ ul {
 ul {
   list-style: none;
   padding: 0;
+}
+img {
+  display: block;
+}
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* ======conainer====== */
@@ -42,7 +49,9 @@ ul {
 
 /* вся страница */
 body {
-  /* margin: 0; */
+  margin: 0 auto;
+  width: 1600px;
+
   background-color: var(--bg-main-page-color);
   color: var(--nav-color);
   font-family: Roboto, sans-serif;
@@ -124,13 +133,10 @@ body {
 .section-hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
 
   background-color: var(--bg-footer);
-
-  outline: 3px solid red;
 }
 
 /* заголовок в hero */
@@ -182,24 +188,21 @@ body {
 /*====== feature ====== */
 .section-feature {
   padding-top: 94px;
-  padding-bottom: 106px;
+  padding-bottom: 47px;
 }
 .feature-list {
   display: flex;
-
-  /* flex-basis: calc((100% - 120px) / 4); */
+  height: 101px;
 }
 .feature-list .text {
   color: var(--desc-text-color);
 }
-.feature-list-item {
+.feature-list .item {
+  flex-basis: calc((100%-90px) / 4);
+  margin-right: 30px;
 }
-.section-title {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+.feature-list :nth-child(4n) {
+  margin-right: 0px;
 }
 
 /* подзаголовки секции "о нас" */
@@ -221,22 +224,111 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* специальности команды */
-.section-team .text {
-  font-size: 16px;
-  line-height: 1.18;
+/* ======== occupation ======== */
+.occupation {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.occupation-img {
+  display: flex;
+}
+.occupation-img .img {
+  flex-basis: calc((100%-60px) / 3);
+  margin-right: 30px;
+}
+.occupation-img .img:nth-child(3n) {
+  margin-right: 0px;
+}
+/* ======= section-team ======= */
+.section-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--bg-section-team);
+}
+.team-list {
+  display: flex;
+  /* height: 368px; */
+}
+.team-list .item {
+  flex-basis: calc((100%-90px) / 4);
+  margin-right: 30px;
+
+  background-color: var(--button-color);
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.team-list .item:nth-child(4n) {
+  margin-right: 0px;
 }
 
 /* имена разработчиков */
 .section-team .name {
+  margin-top: 30px;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* специальности команды */
+.section-team .text {
+  margin-top: 10px;
+  margin-bottom: 30px;
 
+  color: var(--desc-text-color);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* ======footer====== */
+.footer-text {
+  color: var(--button-color);
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--bg-footer);
+}
+.contact-footer .link {
+  color: var(--desc-text-color);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-footer .link-map {
+  color: var(--button-color);
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contact-footer .list {
+  display: block;
+  margin-top: 19px;
+}
+.contact-footer .list.map {
+  margin-top: 20px;
+}
 /*=========================стили для второй страницы=============================*/
 
 /* кнопки фильтра */
@@ -276,31 +368,4 @@ body {
 }
 .project .link {
   text-decoration: none;
-}
-/* ======footer====== */
-.footer-text {
-  color: var(--button-color);
-}
-.footer {
-  background-color: var(--bg-footer);
-}
-.contact-footer .link {
-  color: var(--desc-text-color);
-  text-decoration: none;
-
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.contact-footer .link-map {
-  color: var(--button-color);
-  text-decoration: none;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
