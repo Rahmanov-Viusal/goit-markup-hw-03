@@ -59,7 +59,6 @@ img {
 /* вся страница */
 body {
   margin: 0 auto;
-  width: 1600px;
 
   background-color: var(--bg-main-page-color);
   color: var(--nav-color);
