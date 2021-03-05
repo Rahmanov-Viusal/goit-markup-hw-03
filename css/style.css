@@ -105,6 +105,9 @@ body {
 .site-nav :focus {
   color: var(--bg-button-color);
 }
+.site-nav .current {
+  color: var(--bg-button-color);
+}
 
 .site-nav .link :active {
   color: var(--bg-button-color);
