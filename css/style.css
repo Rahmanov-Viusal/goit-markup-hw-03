@@ -388,6 +388,7 @@ body {
 .project-content {
   padding: 20px 0px 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 /* заголовки под картинками */
 .project .title {
